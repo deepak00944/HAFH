@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: normalf;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+@font-face {
+    font-family: designf;
+    src: url(./636a6fc35c5b2e64705861a8_WulkanDisplayMedium.woff2);
+}
+
+@font-face {
+    font-family: normalf;
+    src: url(./636a6c63e95bb8835e599167_SuisseIntl-Light.otf);
+}
+
+#main{
+    width: 100%;
+    position: relative;
+   
+}
+
+#page1{
+    width: 100vw;
+    height: 65vh;
+    background-color: #fff;
+    
+}
+
+#nav{
+    width: 100vw;
+    height: 100px;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3vw;
+}
+
+#nav img{
+    height: 22px;
+}
+
+#nav button{
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    margin-left: 77vw;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+#nav i{
+
+    background-color: #f0f0f0;
+    padding: 13px;
+    border-radius: 20px;
+}
+
+
+
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: lavenderblush;
+
+}
+
+@media (max-width:600px) {
+    
+    #nav img{
+        height: 18px;
+    }
+
+    #nav button{
+        margin-left: 30vw;
+        padding: 2.35vw 4vw;
+        font-size: 12px;
+    }
+
+    #nav i{
+        padding: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
