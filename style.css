@@ -10,6 +10,10 @@ height: 100%;
 width: 100%;
 }
 
+*::selection{
+    background-color: #dbc2a5;
+}
+
 @font-face {
     font-family: designf;
     src: url(./636a6fc35c5b2e64705861a8_WulkanDisplayMedium.woff2);
@@ -30,6 +34,7 @@ width: 100%;
     width: 100vw;
     height: 65vh;
     background-color: #fff;
+    text-align:center;
     
 }
 
@@ -55,7 +60,7 @@ width: 100%;
     margin-left: 77vw;
 }
 
-#nav a{
+a{
     text-decoration: none;
     color: #fff;
    
@@ -69,6 +74,30 @@ width: 100%;
 }
 
 
+#page1 h1{
+    font-family: designf;
+    margin-top: 10vw;
+    font-size: 3.5vw;
+    font-weight: 300;
+    
+}
+
+#page1 p{
+    margin-top: 10px;
+}
+
+#page1>button{
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    margin-top: 35px;
+    
+}
+
+
+
+
 
 
 #page2{
@@ -80,9 +109,7 @@ width: 100%;
 
 @media (max-width:600px) {
 
-    #page1 {
-        height: 60vh;
-    }
+   
     
     #nav img{
         height: 18px;
@@ -96,6 +123,30 @@ width: 100%;
 
     #nav i{
         padding: 11px;
+    }
+
+    #page1 h1{
+        font-family: designf;
+        margin-top: 30vw;
+        font-size: 8vw;
+        font-weight: 500;
+        
+        
+    }
+    
+    #page1 p{
+        margin-top: 10px;
+        font-size: 3.5vw;
+        
+    }
+
+    #page1>button{
+        border: none;
+        background-color: #1d1d1d;
+        padding: 2.35vw 4vw;
+        border-radius: 50px;
+        margin-top: 35px;
+        
     }
 }
 
