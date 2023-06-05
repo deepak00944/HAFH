@@ -79,6 +79,10 @@ width: 100%;
 }
 
 @media (max-width:600px) {
+
+    #page1 {
+        height: 60vh;
+    }
     
     #nav img{
         height: 18px;
