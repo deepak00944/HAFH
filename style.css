@@ -304,6 +304,7 @@ a{
         overflow-x: auto;
         justify-content: flex-start;
         padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     .p3cards{
