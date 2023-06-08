@@ -48,8 +48,39 @@ gsap.to("#ca",{
     start:"top 65%",
     end:"top -10",
     scrub:1
+  },
+  left:"-40%"
+})
+
+
+gsap.to("#upper",{
+  scrollTrigger:{
+      trigger:"#page6",
+      scroller:"#main",
+      markers:true,
+      scrub:3,
+      start:"top 0%",
+      end:"top -100%",
+  
 
 
   },
-  left:"-40%"
+  top:"-100%"
+})
+
+gsap.to("#page6",{
+  scrollTrigger:{
+      trigger:"#page6",
+      scroller:"#main",
+      markers:true,
+      scrub:3,
+      start:"top 0%",
+      end:"top -100%",
+      pin:true
+
+  
+
+
+  },
+  
 })
