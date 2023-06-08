@@ -41,3 +41,15 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 
+gsap.to("#ca",{
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#page2",
+    start:"top 65%",
+    end:"top -10",
+    scrub:1
+
+
+  },
+  left:"-40%"
+})

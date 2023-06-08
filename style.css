@@ -27,8 +27,11 @@ width: 100%;
 #main{
    width: 100%;
     position: relative;
+    overflow-y: hidden;
    
 }
+
+/* page 1 css starts from here */
 
 #page1{
     width: 100vw;
@@ -109,15 +112,54 @@ a{
 }
 
 
+/* page 2 css starts from here */
+
 
 #page2{
     width: 100%;
     height: 100vh;
-    background-color: lavenderblush;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+
+}
+
+#page2::-webkit-scrollbar{
+    display: none;
+}
+
+#ca{
+
+    height: 90%;
+    position: absolute;
+  
+  display: flex;
+  left:0%;
+    animation-name: caanime;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+#ca img{
+    height: 100%;
+    width: 580px;
+}
+
+@keyframes caanime {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-45% - 30px));
+    }
+    
 }
 
 
-/* page 3 starts from here */
+/* page 3 css starts from here */
 
 
 #page3{
@@ -126,7 +168,7 @@ a{
     background-color: lightcoral;
 }
 
-#p3-content{
+#content{
     width: 100vw;
     height: 16vh;
     background-color: #fff;
@@ -137,25 +179,26 @@ a{
 }
 
 
-#p3-content sup{
+#content sup{
     font-family: designf;
     font-size: 1.5vw;
     font-weight: 200;
     
     
 }
-#p3-content h1{
+#content h1{
     font-family: designf;
     font-size: 4vw;
     font-weight: 500;
     
 }
 
-#p3-content button{
+#content button{
     border: none;
     background-color: #1d1d1d;
     padding: 0.8vw 1.4vw;
     border-radius: 50px;
+ 
     
 }
 
@@ -177,25 +220,41 @@ a{
     flex-shrink: 0;
     border-radius: 5px;
     position: relative;
+    overflow: hidden;
+   
 }
 
-#p31{
-    background-image: url(./milking.gif);
-    background-position: center;
-    background-size:cover;
+#p31 img{
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
     
 }
 
-#p32{
-    background-image: url(./stationary.gif);
-    background-position: center;
-    background-size:cover;
+#p31 img:hover{
+    scale: 1.05;
 }
 
-#p33{
-    background-image: url(./new\ year.gif);
-    background-position: center;
-    background-size:cover;
+
+
+#p32 img{
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+}
+
+#p32 img:hover{
+    scale: 1.05;
+}
+
+#p33 img{
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+}
+
+#p33 img:hover{
+    scale: 1.05;
 }
 
 .p3cardcon{
@@ -230,21 +289,127 @@ a{
 }
 
 
+/* page 4 css starts from here */
 
 
-@keyframes ani {
+#page4{
+    width: 100vw;
+    height: 150vh;
 
-    0%{
-        left: 0;
-    }
+    
+    
 
-    100%{
-        left: 100%;
-    }
+}
+
+.rows{
+    width: 95%;
+    height: 15vh;
+overflow: hidden;
+   display: flex;
+   margin-left: 3vw;
+   border-top: 1px solid #8a8a8a;
+}
+
+#rleft{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items:center;
+    position: relative;
     
 }
 
+#rld{
+    height: 100%;
+    width: 70%;
+ 
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -150px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
 
+.rows:hover #rld{
+left: 0;
+}
+
+.rows:hover{
+    border-color: #000;
+}
+
+#imgdiv{
+    width: 45%;
+    height: 80%;
+    background-color: yellow;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#imgdiv img{
+    width: 105%;
+    object-position: center;
+    border: 10px;
+}
+
+#rld p{
+    margin-left: 20px;
+}
+
+#rmid{
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items:center;
+    
+}
+
+#rright{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items:center;
+    
+}
+
+#rtop{
+    width: 95%;
+    height: 15vh;
+    
+   display: flex;
+   margin-left: 3vw;
+color: #757575;
+  
+}
+
+#rtopl{
+    height: 100%;
+    width: 28.5vw;
+    display: flex;
+    align-items:center;
+    position: relative;
+    margin-left: 10px;
+
+}
+
+#rtmid{
+    height: 100%;
+    width: 28.5vw;
+    display: flex;
+    align-items:center;
+    margin-left: 10px;
+
+}
+
+#rtbot{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items:center;
+   margin-left: 15px;
+}
+
+/* responsive at 600px  */
 
 @media (max-width:600px) {
 
@@ -295,7 +460,7 @@ a{
     }
 
 
-    #p3-content{
+    #content{
         padding:0 5vw;
     }
 
@@ -313,22 +478,36 @@ a{
         width: 85vw;
     }
 
-    #p3-content h1{
+    #content h1{
         font-size: 12vw;
     }
 
-    #p3-content sup{
+    #content sup{
         font-size: 4vw;
 
     }
 
-    #p3-content button{
+    #content button{
         padding: 8px 10px;
 
     }
 
     .p3cardcon{
         height: 15%;
+    }
+
+
+    #page2{
+     
+        height: 70vh;
+    }
+
+    
+    
+    #ca img{
+        height: 92%;
+        background-color: yellow;
+        width: 330px;
     }
 }
 
