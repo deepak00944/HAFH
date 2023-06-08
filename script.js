@@ -41,46 +41,57 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 
-gsap.to("#ca",{
-  scrollTrigger:{
-    scroller:"#main",
-    trigger:"#page2",
-    start:"top 65%",
-    end:"top -10",
-    scrub:1
+gsap.to("#ca", {
+  scrollTrigger: {
+    scroller: "#main",
+    trigger: "#page2",
+    start: "top 65%",
+    end: "top -10",
+    scrub: 1
   },
-  left:"-40%"
+  left: "-40%"
 })
 
 
-gsap.to("#upper",{
-  scrollTrigger:{
-      trigger:"#page6",
-      scroller:"#main",
-      markers:true,
-      scrub:3,
-      start:"top 0%",
-      end:"top -100%",
-  
+gsap.to("#upper", {
+  scrollTrigger: {
+    trigger: "#page6",
+    scroller: "#main",
+    markers: true,
+    scrub: 3,
+    start: "top 0%",
+    end: "top -200%",
+
 
 
   },
-  top:"-100%"
+  top: "-100%"
 })
 
-gsap.to("#page6",{
-  scrollTrigger:{
-      trigger:"#page6",
-      scroller:"#main",
-      markers:true,
-      scrub:3,
-      start:"top 0%",
-      end:"top -100%",
-      pin:true
+gsap.to("#down", {
+  scrollTrigger: {
+    trigger: "#page6",
+    scroller: "#main",
+    markers: true,
+    scrub: 3,
+    start: "top -320%",
+    end: "top -520%",
 
-  
 
 
   },
-  
+  top: "0%"
+})
+
+gsap.to("#page6", {
+  scrollTrigger: {
+    trigger: "#page6",
+    scroller: "#main",
+    markers: true,
+    scrub: 3,
+    start: "top 0%",
+    end: "top -520%",
+    pin: true
+  },
+
 })
