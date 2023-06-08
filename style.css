@@ -15,6 +15,8 @@ body {
     background-color: #dbc2a5;
 }
 
+/* here are the font files linked */
+
 @font-face {
     font-family: designf;
     src: url(./636a6fc35c5b2e64705861a8_WulkanDisplayMedium.woff2);
@@ -24,6 +26,8 @@ body {
     font-family: normalf;
     src: url(./636a6c63e95bb8835e599167_SuisseIntl-Light.otf);
 }
+
+/* page css starts from here  */
 
 #main {
     width: 100%;
@@ -39,8 +43,6 @@ body {
     height: 65vh;
     background-color: #fff;
     text-align: center;
-
-
 }
 
 #nav {
@@ -51,7 +53,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 3vw;
-
 }
 
 #nav img {
@@ -65,12 +66,10 @@ body {
     border-radius: 50px;
     margin-left: 77vw;
     position: relative;
-
 }
 
 #page1 button:hover {
     scale: 0.95;
-
 }
 
 #page1 button {
@@ -80,11 +79,9 @@ body {
 a {
     text-decoration: none;
     color: #fff;
-
 }
 
 #nav i {
-
     background-color: #f0f0f0;
     padding: 13px;
     border-radius: 20px;
@@ -96,7 +93,6 @@ a {
     margin-top: 10vw;
     font-size: 3.5vw;
     font-weight: 300;
-
 }
 
 #page1 p {
@@ -109,7 +105,6 @@ a {
     padding: 0.8vw 1.4vw;
     border-radius: 50px;
     margin-top: 35px;
-
 }
 
 
@@ -122,7 +117,6 @@ a {
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
-
 }
 
 #page2::-webkit-scrollbar {
@@ -130,10 +124,8 @@ a {
 }
 
 #ca {
-
     height: 90%;
     position: absolute;
-
     display: flex;
     left: 0%;
     animation-name: caanime;
@@ -184,15 +176,12 @@ a {
     font-family: designf;
     font-size: 1.5vw;
     font-weight: 200;
-
-
 }
 
 #content h1 {
     font-family: designf;
     font-size: 4vw;
     font-weight: 500;
-
 }
 
 #content button {
@@ -200,8 +189,6 @@ a {
     background-color: #1d1d1d;
     padding: 0.8vw 1.4vw;
     border-radius: 50px;
-
-
 }
 
 #cards-div {
@@ -211,8 +198,6 @@ a {
     gap: 20px;
     justify-content: center;
     background-color: #fff;
-
-
 }
 
 .p3cards {
@@ -223,21 +208,17 @@ a {
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-
 }
 
 #p31 img {
     transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
     width: 100%;
     height: 100%;
-
 }
 
 #p31 img:hover {
     scale: 1.05;
 }
-
-
 
 #p32 img {
     transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
@@ -297,10 +278,6 @@ a {
 #page4 {
     width: 100vw;
     height: 150vh;
-
-
-
-
 }
 
 .rows {
@@ -318,13 +295,11 @@ a {
     display: flex;
     align-items: center;
     position: relative;
-
 }
 
 #rld {
     height: 100%;
     width: 70%;
-
     display: flex;
     align-items: center;
     position: absolute;
@@ -363,7 +338,6 @@ a {
     width: 30vw;
     display: flex;
     align-items: center;
-
 }
 
 #rright {
@@ -371,17 +345,14 @@ a {
     width: 40vw;
     display: flex;
     align-items: center;
-
 }
 
 #rtop {
     width: 95%;
     height: 15vh;
-
     display: flex;
     margin-left: 3vw;
     color: #757575;
-
 }
 
 #rtopl {
@@ -391,7 +362,6 @@ a {
     align-items: center;
     position: relative;
     margin-left: 10px;
-
 }
 
 #rtmid {
@@ -400,7 +370,6 @@ a {
     display: flex;
     align-items: center;
     margin-left: 10px;
-
 }
 
 #rtbot {
@@ -410,9 +379,6 @@ a {
     align-items: center;
     margin-left: 15px;
 }
-
-
-
 
 
 /* page 5starts from here  */
@@ -429,11 +395,8 @@ a {
     text-align: center;
 }
 
-
-
 #page5 h1 {
     font-family: designf;
-
     font-size: 3.5vw;
     font-weight: 300;
     color: #fff;
@@ -444,7 +407,6 @@ a {
 }
 
 #page5 p {
-
     color: #fff;
     text-transform: uppercase;
     position: absolute;
@@ -462,9 +424,6 @@ a {
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
-
-
-
 }
 
 #page5 a {
@@ -472,9 +431,43 @@ a {
 }
 
 
-
 /* page 6 starts from here  */
 
+
+#p6-content {
+    width: 100vw;
+    height: 16vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+#p6-content a {
+    color: #000;
+}
+
+#p6-content sup {
+    font-family: designf;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#p6-content h1 {
+    font-family: designf;
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+#p6-content button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    color: black;
+}
 
 #page6 {
     width: 100vw;
@@ -483,13 +476,20 @@ a {
     overflow: hidden;
 }
 
+#page6 .rows {
+    color: #fff;
+}
+
+#page6 .rows:hover {
+    border-color: #fff;
+}
+
 #below {
     background-color: #1d1d1d;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
 }
 
 #upper {
@@ -498,7 +498,6 @@ a {
     background-color: #1d1d1d;
     position: absolute;
     z-index: 9;
-
 }
 
 #down {
@@ -513,59 +512,47 @@ a {
 #bleft {
     width: 32.5%;
     height: 100%;
-
     position: relative;
 }
-
 
 #bmid {
     width: 32.5%;
     height: 100%;
-
     position: relative;
 }
 
 #bright {
     width: 32.5%;
     height: 100%;
-
     position: relative;
 }
-
 
 #blt {
     height: 70vh;
     width: 100%;
     top: -30%;
     position: absolute;
-
 }
-
 
 #blb {
     height: 70vh;
     width: 100%;
     top: 42%;
     position: absolute;
-
 }
-
 
 #bmt {
     height: 70vh;
     width: 100%;
     top: -12%;
     position: absolute;
-
 }
-
 
 #bmb {
     height: 70vh;
     width: 100%;
     top: 60%;
     position: absolute;
-
 }
 
 #brt {
@@ -573,25 +560,13 @@ a {
     width: 100%;
     top: -30%;
     position: absolute;
-
 }
-
 
 #brb {
     height: 70vh;
     width: 100%;
     top: 42%;
     position: absolute;
-
-}
-
-
-/* page 7 starts from here/  */
-
-#page7 {
-    width: 100vw;
-    height: 100vh;
-    background-color: green;
 }
 
 
