@@ -29,11 +29,36 @@ body {
 
 /* page css starts from here  */
 
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color:#1d1d1d;
+    position: absolute;
+    top: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#loader h1{
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: designf;
+
+}
+
+
+
+
+
 #main {
     width: 100%;
     position: relative;
     overflow-y: hidden;
-
+  
 }
 
 /* page 1 css starts from here */
@@ -347,6 +372,8 @@ a {
     align-items: center;
 }
 
+
+
 #rtop {
     width: 95%;
     height: 15vh;
@@ -380,6 +407,31 @@ a {
     margin-left: 15px;
 }
 
+#rtbot p{
+    margin-left:20px;
+    
+}
+
+#rright button{
+    background-color: #fff;
+    border: 1px solid #8a8a8a;
+    border-radius: 20px;
+    padding: 0.6vw 1vw;
+    margin-left: 10px;
+
+}
+
+.rows p{
+    color: #757575;
+}
+
+.rows:hover p{
+    color: #000;
+}
+
+.rows:hover #rright button{
+    border-color: #000;
+}
 
 /* page 5starts from here  */
 
@@ -393,6 +445,34 @@ a {
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
+}
+
+#page5 h4{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 300;
+}
+
+#page5 img{
+    height: 17vw;
+    border-radius: 6px;
+}
+
+#p5img1{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#p5img2{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    transform: translate(-50%, -50%);
 }
 
 #page5 h1 {
@@ -484,12 +564,42 @@ a {
     border-color: #fff;
 }
 
+#upper p{
+    color: #8a8a8a;
+}
+
+#upper button{
+    background-color: #1d1d1d;
+}
+
+#upper .rows:hover button{
+    border-color: #fff;
+}
+
+#upper .rows:hover p{
+    color: #fff;
+}
+
 #below {
     background-color: #1d1d1d;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+#bmid button{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: none;
+    padding: 13px 60px;
+    border-radius: 25px;
+
+   
 }
 
 #upper {
@@ -570,6 +680,122 @@ a {
 }
 
 
+#dtop{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#dtleft{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#dtright{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#dbot{
+    width: 100%;
+    height: 15%;
+    
+}
+
+
+#dtline{
+    width: .5px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+}
+
+#lline{
+    width: 100%;
+    height: .5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+#rline{
+    width: 100%;
+    height: .5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+}
+
+#dtleft h1 {
+    font-family: designf;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+
+
+#dtleft>button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 4vw;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+
+}
+
+#dtleft a{
+    color: #1d1d1d;
+}
+
+#dtright h1 {
+    font-family: designf;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+
+
+#dtright>button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 4vw;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+
+}
+
+#dtright a{
+    color: #1d1d1d;
+}
+
+#dbot img{
+    
+    width: 100%;
+}
 
 /* responsive at 600px  */
 

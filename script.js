@@ -57,7 +57,6 @@ gsap.to("#upper", {
   scrollTrigger: {
     trigger: "#page6",
     scroller: "#main",
-    markers: true,
     scrub: 3,
     start: "top 0%",
     end: "top -200%",
@@ -72,7 +71,6 @@ gsap.to("#down", {
   scrollTrigger: {
     trigger: "#page6",
     scroller: "#main",
-    markers: true,
     scrub: 3,
     start: "top -320%",
     end: "top -520%",
@@ -87,11 +85,73 @@ gsap.to("#page6", {
   scrollTrigger: {
     trigger: "#page6",
     scroller: "#main",
-    markers: true,
     scrub: 3,
     start: "top 0%",
     end: "top -520%",
     pin: true
   },
 
+})
+
+gsap.to("#dtline",{
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#down",
+    start:"top -280%",
+    end:"top -410%",
+    scrub:3
+
+  },
+
+  top:"0"
+})
+
+gsap.to("#lline",{
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#down",
+    start:"top -350%",
+    end:"top -410%",
+    scrub:3
+
+  },
+
+  left:"0"
+})
+
+gsap.to("#rline",{
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#down",
+    start:"top -350%",
+    end:"top -410%",
+    scrub:3
+
+  },
+
+  left:"0"
+})
+
+
+var tl = gsap.timeline()
+
+tl.to("#loader h1",{
+  opacity:"1",
+  duration:1
+  
+})
+
+.to("#loader h1",{
+  opacity:"0",
+
+  duration:0.5
+  
+})
+
+.to("#loader",{
+ 
+  top:"100%",
+  duration:2
+
+  
 })
