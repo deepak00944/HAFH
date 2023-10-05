@@ -1,0 +1,916 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: normalf;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+*::selection {
+    background-color: #dbc2a5;
+}
+
+/* here are the font files linked */
+
+@font-face {
+    font-family: designf;
+    src: url(./636a6fc35c5b2e64705861a8_WulkanDisplayMedium.woff2);
+}
+
+@font-face {
+    font-family: normalf;
+    src: url(./636a6c63e95bb8835e599167_SuisseIntl-Light.otf);
+}
+
+/* page css starts from here  */
+
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color:#1d1d1d;
+    position: absolute;
+    top: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#loader h1{
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: designf;
+
+}
+
+#main {
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+/* page 1 css starts from here */
+
+#page1 {
+    width: 100vw;
+    height: 70vh;
+    background-color: #fff;
+    text-align: center;
+}
+
+#nav {
+    width: 100vw;
+    height: 100px;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3vw;
+}
+
+#nav img {
+    height: 22px;
+}
+
+#nav button {
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    margin-left: 70vw;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#page1 button:hover {
+    scale: 0.95;
+}
+
+#btn-in{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0%) scale(1);
+    transition: all ease 0.5s;
+    border-radius: 50px;
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    cursor: pointer;
+}
+
+button:hover #btn-in{
+    top: 0%;
+    transform: translate(-50%, 0%);
+}
+#page1 button {
+    transition: all linear 0.2s;
+}
+
+#nav i {
+    background-color: #f0f0f0;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+
+#page1 h1 {
+    font-family: designf;
+    margin-top: 8vw;
+    font-size: 3.5vw;
+    font-weight: 300;
+}
+
+#page1 p {
+    margin-top: 10px;
+}
+
+#page1>button {
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    margin-top: 35px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* page 2 css starts from here */
+
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#page2::-webkit-scrollbar {
+    display: none;
+}
+
+#ca {
+    height: 90%;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    animation-name: caanime;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+#ca img {
+    height: 100%;
+    width: 580px;
+}
+
+@keyframes caanime {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-45% - 30px));
+    }
+
+}
+
+
+/* page 3 css starts from here */
+
+
+#page3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+#content {
+    width: 100vw;
+    height: 16vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+
+#content sup {
+    font-family: designf;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#content h1 {
+    font-family: designf;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+#content button {
+    border: none;
+    background-color: #1d1d1d;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+}
+
+#cards-div {
+    height: 84vh;
+    width: 100vw;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.p3cards {
+    height: 79vh;
+    width: 30.5vw;
+    background-color: red;
+    flex-shrink: 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+#p31 img {
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+}
+
+#p31 img:hover {
+    scale: 1.05;
+}
+
+#p32 img {
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+}
+
+#p32 img:hover {
+    scale: 1.05;
+}
+
+#p33 img {
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+}
+
+#p33 img:hover {
+    scale: 1.05;
+}
+
+.p3cardcon {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+
+.p3cardcon h1 {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.p3cardcon p {
+    font-size: 15px;
+    color: #fff;
+
+}
+
+.p3cardcon button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 18px;
+    border-radius: 30px;
+}
+
+
+/* page 4 css starts from here */
+
+
+#page4 {
+    width: 100vw;
+    height: 150vh;
+    font-size: 1vw;
+}
+
+#rtop {
+    width: 95%;
+    height: 15vh;
+    display: flex;
+    margin-left: 3vw;
+    color: #757575;
+}
+
+#rtopl {
+    height: 100%;
+    width: 28.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+}
+
+#rtmid {
+    height: 100%;
+    width: 28.5vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#rtbot {
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#rtbot p{
+    margin-left:20px;
+    
+}
+
+.rows {
+    width: 95%;
+    height: 15vh;
+    overflow: hidden;
+    display: flex;
+    margin-left: 3vw;
+    border-top: 1px solid #8a8a8a;
+}
+
+#rleft {
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#rld {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -120px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+.rows:hover #rld {
+    left: 0;
+}
+
+.rows:hover {
+    border-color: #000;
+}
+
+#imgdiv {
+    width: 45%;
+    height: 80%;
+    background-color: yellow;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#imgdiv img {
+    width: 105%;
+    object-position: center;
+    border: 10px;
+}
+
+#rld p {
+    margin-left: 20px;
+}
+
+#rmid {
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+#rright {
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+}
+
+
+#rright button{
+    background-color: #fff;
+    border: 1px solid #8a8a8a;
+    border-radius: 20px;
+    padding: 0.6vw 1vw;
+    margin-left: 10px;
+
+}
+
+.rows p{
+    color: #757575;
+}
+
+.rows:hover p{
+    color: #000;
+}
+
+.rows:hover #rright button{
+    border-color: #000;
+}
+
+/* page 5starts from here  */
+
+#page5 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./page5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: -120px;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+#page5 h4{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 300;
+}
+
+#page5 img{
+    height: 17vw;
+    border-radius: 6px;
+}
+
+#p5img1{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#p5img2{
+    position: absolute;
+    left: 90%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#page5 h1 {
+    font-family: designf;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#page5 p {
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#page5>button {
+    border: none;
+    background-color: #ffff;
+    padding: 0.8vw 2vw;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#page5 a {
+    color: #000;
+}
+
+
+/* page 6 starts from here  */
+
+
+#p6-content {
+    width: 100vw;
+    height: 16vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
+
+#p6-content a {
+    color: #000;
+}
+
+#p6-content sup {
+    font-family: designf;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#p6-content h1 {
+    font-family: designf;
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+#p6-content button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 1.4vw;
+    border-radius: 50px;
+    color: black;
+}
+
+#page6 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#page6 .rows {
+    color: #fff;
+}
+
+#page6 .rows:hover {
+    border-color: #fff;
+}
+
+#upper p{
+    color: #8a8a8a;
+}
+
+#upper button{
+    background-color: #1d1d1d;
+}
+
+#upper .rows:hover button{
+    border-color: #fff;
+}
+
+#upper .rows:hover p{
+    color: #fff;
+}
+
+#below {
+    background-color: #1d1d1d;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#bmid button{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: none;
+    padding: 13px 60px;
+    border-radius: 25px;
+
+   
+}
+
+#upper {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1d;
+    position: absolute;
+    z-index: 9;
+}
+
+#down {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1d;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+}
+
+#bleft {
+    width: 32.5%;
+    height: 100%;
+    position: relative;
+}
+
+#bmid {
+    width: 32.5%;
+    height: 100%;
+    position: relative;
+}
+
+#bright {
+    width: 32.5%;
+    height: 100%;
+    position: relative;
+}
+
+#blt {
+    height: 70vh;
+    width: 100%;
+    top: -30%;
+    position: absolute;
+}
+
+#blb {
+    height: 70vh;
+    width: 100%;
+    top: 42%;
+    position: absolute;
+}
+
+#bmt {
+    height: 70vh;
+    width: 100%;
+    top: -12%;
+    position: absolute;
+}
+
+#bmb {
+    height: 70vh;
+    width: 100%;
+    top: 60%;
+    position: absolute;
+}
+
+#brt {
+    height: 70vh;
+    width: 100%;
+    top: -30%;
+    position: absolute;
+}
+
+#brb {
+    height: 70vh;
+    width: 100%;
+    top: 42%;
+    position: absolute;
+}
+
+
+#dtop{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+#dtleft{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#dtright{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#dbot{
+    width: 100%;
+    height: 15%;
+    
+}
+
+
+#dtline{
+    width: .5px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+}
+
+#lline{
+    width: 100%;
+    height: .5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+#rline{
+    width: 100%;
+    height: .5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+}
+
+#dtleft h1 {
+    font-family: designf;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+
+
+#dtleft>button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 4vw;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+
+}
+
+#dtleft a{
+    color: #1d1d1d;
+}
+
+#dtright h1 {
+    font-family: designf;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+
+
+#dtright>button {
+    border: none;
+    background-color: #fff;
+    padding: 0.8vw 4vw;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+
+}
+
+#dtright a{
+    color: #1d1d1d;
+}
+
+#dbot img{
+    
+    width: 100%;
+}
+
+/* responsive at 600px  */
+
+@media (max-width:600px) {
+
+
+
+    #nav img {
+        height: 18px;
+    }
+
+    #nav button {
+        margin-left: 30vw;
+        padding: 2.35vw 4vw;
+        font-size: 12px;
+    }
+
+    #nav i {
+        padding: 11px;
+    }
+
+    #page1 h1 {
+        font-family: designf;
+        margin-top: 30vw;
+        font-size: 8vw;
+        font-weight: 500;
+
+
+    }
+
+    #page1 p {
+        margin-top: 10px;
+        font-size: 3.5vw;
+
+    }
+
+    #page1>button {
+        border: none;
+        background-color: #1d1d1d;
+        padding: 2.35vw 4vw;
+        border-radius: 50px;
+        margin-top: 35px;
+
+    }
+
+
+    #page3 {
+        height: 80vh;
+
+    }
+
+
+    #content {
+        padding: 0 5vw;
+    }
+
+    #cards-div {
+        height: 64vh;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .p3cards {
+        height: 58vh;
+        flex-shrink: 0;
+        width: 85vw;
+    }
+
+    #content h1 {
+        font-size: 12vw;
+    }
+
+    #content sup {
+        font-size: 4vw;
+
+    }
+
+    #content button {
+        padding: 8px 10px;
+
+    }
+
+    .p3cardcon {
+        height: 15%;
+    }
+
+
+    #page2 {
+
+        height: 70vh;
+    }
+
+
+
+    #ca img {
+        height: 92%;
+        background-color: yellow;
+        width: 330px;
+    }
+}
