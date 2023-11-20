@@ -148,5 +148,18 @@ tl.to("#loader h1",{
 
 tl.to("#loader",{
   top:"-100%",
+  duration:2 , 
+  opacity:"1",
+  duration:1
+  
+})
+
+tl.to("#loader h1",{
+  opacity:"0",
+  duration:0.5
+})
+
+tl.to("#loader",{
+  top:"-100%",
   duration:2  
 })
