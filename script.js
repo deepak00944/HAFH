@@ -141,17 +141,12 @@ tl.to("#loader h1",{
   
 })
 
-.to("#loader h1",{
+tl.to("#loader h1",{
   opacity:"0",
-
   duration:0.5
-  
 })
 
-.to("#loader",{
- 
-  top:"100%",
-  duration:2
-
-  
+tl.to("#loader",{
+  top:"-100%",
+  duration:2  
 })
